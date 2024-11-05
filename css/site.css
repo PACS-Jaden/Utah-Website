@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    height: 100%;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 100%;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.selected {
+    background-color: #fff9a1;
+    color: black;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 8em;
+}
+
+main {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Table Styles */
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+td {
+    color: #333;
+}
+
+caption {
+    font-size: 1.5em;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Aside */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #e9e9e9;
+    margin-left: 20px;
+    float: right;
+}
+
+/* Form Popup Modal */
+#user-form {
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 33%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.form-container h3 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-container label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"], 
+.form-container textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}

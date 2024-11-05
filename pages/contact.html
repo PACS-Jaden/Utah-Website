@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utah State Page</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <script src="../js/main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../images/utah_logo.png" alt="State Logo">
+            <h1>Utah</h1>
+        </div>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="./slc.html">Salt Lake City</a>
+            <a href="./hooper.html">Hooper</a>
+            <a href="./westhaven.html">West Haven</a>
+            <a class="selected" href="./contact.html">Ask A Question</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="user-form">
+            <div class="form-container">
+                <h3>User Form</h3>
+                <form onsubmit="CheckEmail(event)">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="confirm-email">Confirm Email</label>
+                    <input type="email" id="confirm-email" name="confirm-email" required>
+
+                    <label for="user-quesetion">Question</label>
+                    <textarea id="user-question" name="user-question" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
